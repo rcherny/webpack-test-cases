@@ -2,7 +2,7 @@
 
 - [ ] update readme and html bundle test cases
 
-Various simple test configs for using [webpack](https://webpack.js.org/) build set ups with [various plugins](\[Main - webpack](https://webpack.js.org/)).
+Various simple test configs for using [webpack](https://webpack.js.org/) build set ups with [various plugins](https://webpack.js.org/plugins/).
 
 Each sub-folder should be a standalone test case. Serve is run from the root, however.
 
