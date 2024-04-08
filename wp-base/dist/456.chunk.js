@@ -1,0 +1,1 @@
+(self.webpackChunk=self.webpackChunk||[]).push([[456],{456:()=>{console.log(">> app1.js")}}]);

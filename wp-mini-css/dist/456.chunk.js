@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[456],{456:(s,e,p)=>{p.r(e),console.log(">> app1.js")}}]);

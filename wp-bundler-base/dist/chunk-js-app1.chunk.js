@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[469],{456:(e,s,n)=>{n.r(s),n.d(s,{default:()=>p}),console.log(">> app1.js (wp-bundler-base)");const o={init(){console.log(">> app1 >> appNodeLoader.init()")}};o.init();const p=o}}]);

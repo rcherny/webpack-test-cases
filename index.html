@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse webpack-test-cases</title>
+  </head>
+  <body>
+    <h1>webpack-test-cases</h1>
+    <p>
+      Browse each and use the devtools to watch the console and the network
+      traffic.
+    </p>
+    <ul>
+      <li><a href="./wp-base/dist">wp-base</a> - baseline webpack build</li>
+      <li>
+        <a href="./wp-mini-css/dist">wp-mini-css</a>
+        - webpack build with <code>css-loader</code> +
+        <code>mini-css-extract-plugin</code>
+      </li>
+      <li>
+        <a href="./wp-mini-chunkname/dist">wp-mini-chunkname</a>
+        - webpack build with <code>css-loader</code> +
+        <code>mini-css-extract-plugin</code> and
+        <strong>magic comments for chunk names</strong>.
+        <ul>
+          <li>
+            <a
+              href="https://github.com/webdiscus/html-bundler-webpack-plugin/discussions/85"
+              _target="blank"
+              >Reference discussion</a
+            >
+            in html-bundler-webpack-plugin repo.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="./wp-mini-remove/dist">wp-mini-remove</a>
+        - mini-chunk extract +
+        <code>webpack-remove-empty-scripts</code>
+      </li>
+      <li>
+        <a href="./wp-exp-css/dist">wp-exp-css</a> - native CSS webpack support
+      </li>
+    </ul>
+    <h2>webpack-test-cases with <code>html-bundler-webpack-plugin</code></h2>
+    <ul>
+      <li>
+        <a href="./wp-bundler-base/dist">wp-bundler-base</a> - build with
+        bundler template
+      </li>
+      <li>
+        <a href="./wp-bundler-lazyfiles/dist">wp-bundler-lazyfiles</a> - build
+        with lazy js and css files
+      </li>
+    </ul>
+  </body>
+</html>
