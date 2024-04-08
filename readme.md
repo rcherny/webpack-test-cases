@@ -1,5 +1,7 @@
 # Webpack Test Cases
 
+- [ ] update readme and html bundle test cases
+
 Various simple test configs for using [webpack](https://webpack.js.org/) build set ups with [various plugins](\[Main - webpack](https://webpack.js.org/)).
 
 Each sub-folder should be a standalone test case. Serve is run from the root, however.
@@ -22,7 +24,7 @@ These test cases largely demo the ability to lazy import css via JS. This is not
 CSS largely should be imported via a `<link />` tag, but for various "routes" on a SPA application it is not unusual to
 load a JS file + its css support simultaneously after the page loads.
 
-### baseline webpack build
+<!-- ### baseline webpack build
 
 - `~/wp-base`
 - no plugins
@@ -53,3 +55,4 @@ Native Chunkname - Magic Comments
 ### HTML-Bundler-Webpack-Plugin - baseline
 
 ### mini-chunk-remove
+-->
