@@ -2,12 +2,12 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const RemoveEmptyScriptsPlugin = require("webpack-remove-empty-scripts");
 
-const ROOT = "wp-mini-remove";
-
+const ROOT = "wp-mini-remove-demand";
+// this includes lazy loaded, on demand chunks
 module.exports = {
   mode: "production",
   context: path.join(__dirname, `./${ROOT}`),
-  // devtool: "source-map",
+
   output: {
     path: path.join(__dirname, `${ROOT}/dist/`),
     publicPath: `/${ROOT}/dist/`,
@@ -18,7 +18,7 @@ module.exports = {
     chunkFilename: "[name].chunk.js",
   },
   experiments: {
-    outputModule: true,
+    outputModule: true, // not doing much
   },
 
   entry: {

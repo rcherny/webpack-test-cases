@@ -1,6 +1,7 @@
-import "./app1.css";
+// has never been supported
+import /* webpackChunkName: "chunk-css-app1" */ "./app1.css";
 
-console.log(">> app1.js (wp-bundler-base)");
+console.log(">> app1.js (mini-remove)");
 
 const appNodeLoader = {
   init() {

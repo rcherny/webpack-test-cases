@@ -4,4 +4,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@media (min-width: 800px) {
+  body {
+    width: 70vw;
+  }
+}
 head{--webpack-314:_202;}

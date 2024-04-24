@@ -1,6 +1,7 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
+
 const ROOT = "wp-mini-chunkname";
 
 module.exports = {
@@ -16,6 +17,9 @@ module.exports = {
     filename: "[name].js",
     chunkFilename: "[name].chunk.js",
   },
+  // experiments: {
+  //   outputModule: true,
+  // },
 
   entry: {
     main: "./src/main.js",

@@ -8,7 +8,9 @@ function loadCSSLazy(url) {
 const appNode = {
   init(data) {
     // undesired: on-demand file is loaded up front
-    const loadcss = () => import("./appNode.css");
+    // also, today this lazy loaded CSS file is generating a JS file that does nothing
+    const loadcss = () => import(/* webpackChunkName: "lazy-appNodeStyle" */"./appNode.css");
+    // lazy load css with JS module
     loadcss();
     console.log(">> app1 >> appNode.js >> init(), data:", data);
   },

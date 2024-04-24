@@ -1,0 +1,26 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse webpack-test-cases</title>
+    <link rel="stylesheet" href="dist/style.css" />
+  </head>
+  <body>
+    <h1>webpack-test-cases - <code>wp-mini-remove-demand</code></h1>
+    <p>Please use the devtools network panel.</p>
+    <p class="style">
+      style node should be styled (via entrypoint), enhanced by the chunk: chunk should be renamed; and the
+      <code>dist</code> folder should have no <code>style.js</code> file
+    </p>
+    <p><strong>Additionally</strong>: On demand lazy loading:</p>
+    <p class="appNode">
+      <a href="#appNode" data-info="wp-mini-remove-demand">click for app node</a> with JS + CSS
+    </p>
+    <ul>
+      <li>The above should load <code>appNode.js</code>, renamed as <code>lazy-appNode.chunk.js</code></li>
+      <li>That file, in turn, should load <code>lazy-appNodeStyle.chunk.css</code></li>
+      <li>(and the undesired <code>lazy-appNodeStyle.chunk.js</code> file, because <code>import()</code> generates a module)</li>
+    </ul>
+    <script src="dist/main.js"></script>
+  </body>
+</html>

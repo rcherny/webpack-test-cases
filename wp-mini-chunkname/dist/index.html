@@ -9,8 +9,11 @@
     <h1>webpack-test-cases - <code>wp-mini-chunkname</code></h1>
     <p>Please use the devtools network panel.</p>
     <p class="style">
-      style node should be styled, and chunk should be renamed
+      style node should be styled (via entry point), but enhanced by chunk; chunk should be renamed per the magic comments
     </p>
+    <ul>
+      <li>Note the filename of the CSS chunk matches the JS magic comment chunkname (expected), not the css magic comment chunkname (not expected)</li>
+    </ul>
     <script src="dist/main.js"></script>
   </body>
 </html>

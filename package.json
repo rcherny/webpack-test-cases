@@ -6,10 +6,10 @@
     "base": "npx tee-pipefail webpack --config webpack.base.config.js wp-base/build.log",
     "mini": "npx tee-pipefail webpack --config webpack.mini-css.config.js wp-mini-css/build.log",
     "mini:chunk": "npx tee-pipefail webpack --config webpack.mini-chunkname.config.js wp-mini-chunkname/build.log",
-    "mini:remove": "npx tee-pipefail webpack --config webpack.mini-chunk-remove.config.js wp-mini-remove/build.log",
+    "mini:remove": "npx tee-pipefail webpack --config webpack.mini-remove-demand.config.js wp-mini-remove-demand/build.log",
     "css": "npx tee-pipefail webpack --config webpack.exp-css.config.js wp-exp-css/build.log",
     "bundler:base": "npx tee-pipefail webpack --config webpack.bundler-base.config.js wp-bundler-base/build.log",
-    "bundler:lazyfiles": "npx tee-pipefail webpack --config webpack.bundler-lazyfiles.config.js wp-bundler-lazyfiles/build.log",
+    "bundler:lazyfiles": "npx tee-pipefail webpack --config webpack.bundler-on-demand.config.js wp-bundler-on-demand/build.log",
     "all": "concurrently npm:base npm:mini \"npm:mini:*\" npm:css \"npm:bundler:*\"",
     "server": "npx serve ."
   },

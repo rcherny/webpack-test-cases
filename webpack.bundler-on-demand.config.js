@@ -1,7 +1,7 @@
 const path = require("path");
 const HtmlBundlerWebpackPlugin = require("html-bundler-webpack-plugin");
 
-const ROOT = "wp-bundler-lazyfiles";
+const ROOT = "wp-bundler-on-demand";
 
 module.exports = {
   mode: "production",

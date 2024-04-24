@@ -1,15 +1,15 @@
 assets by path [1m[32m*.js[39m[22m 3.86 KiB
   asset [1m[32mmain.js[39m[22m 3.72 KiB [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (name: main)
   asset [1m[32mchunk-js-app1.chunk.js[39m[22m 139 bytes [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (name: chunk-js-app1)
-assets by path [1m[32m*.css[39m[22m 211 bytes
-  asset [1m[32mstyle.css[39m[22m 121 bytes [1m[33m[compared for emit][39m[22m (name: style)
+assets by path [1m[32m*.css[39m[22m 271 bytes
+  asset [1m[32mstyle.css[39m[22m 181 bytes [1m[33m[compared for emit][39m[22m (name: style)
   asset [1m[32mchunk-js-app1.chunk.css[39m[22m 90 bytes [1m[33m[compared for emit][39m[22m (name: chunk-js-app1)
 runtime modules 13.9 KiB 14 modules
-cacheable modules 231 bytes (javascript) 159 bytes (css)
+cacheable modules 231 bytes (javascript) 219 bytes (css)
   javascript modules 231 bytes
     [1m./src/main.js[39m[22m 86 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
     [1m./src/app1.js[39m[22m 145 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-  css modules 159 bytes
-    [1mcss ./src/style.css[39m[22m 95 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+  css modules 219 bytes
+    [1mcss ./src/style.css[39m[22m 155 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
     [1mcss ./src/app1.css[39m[22m 64 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-webpack 5.91.0 compiled [1m[32msuccessfully[39m[22m in 582 ms
+webpack 5.91.0 compiled [1m[32msuccessfully[39m[22m in 224 ms

@@ -1,1 +1,0 @@
-(self.webpackChunk=self.webpackChunk||[]).push([[127],{184:(e,p,n)=>{n.r(p),n.d(p,{appNode:()=>a});const a={init(e){n.e(662).then(n.bind(n,662)),console.log(">> app1 >> appNode.js >> init(), data:",e)}}}}]);

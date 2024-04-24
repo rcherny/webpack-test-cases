@@ -3,18 +3,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Browse webpack-test-cases</title>
-    <link rel="stylesheet" href="dist/style.css" />
-  </head>
+    <link rel="stylesheet" href="/wp-bundler-on-demand/dist/style.css" />
+  <link href="/wp-bundler-on-demand/dist/main.chunk.css" rel="stylesheet">
+</head>
   <body>
-    <h1>webpack-test-cases - <code>wp-mini-remove</code></h1>
+    <h1>webpack-test-cases - <code>wp-bundler-on-demand</code></h1>
     <p>Please use the devtools network panel.</p>
-    <p class="style">
-      style node should be styled, chunk should be renamed, and the
-      <code>dist</code> folder should have no <code>style.js</code> file
-    </p>
+    <p class="style">style node should be styled.</p>
     <p class="appNode">
       <a href="#appNode" data-info="wp-bundler-base">click for app node</a>
     </p>
-    <script src="dist/main.js"></script>
+    <script src="/wp-bundler-on-demand/dist/main.js"></script>
   </body>
 </html>
