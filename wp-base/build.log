@@ -1,7 +1,8 @@
 asset [1m[32mmain.js[39m[22m 2.39 KiB [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (name: main)
+asset [1m[32mindex.html[39m[22m 363 bytes [1m[33m[compared for emit][39m[22m [from: src/index.html] [1m[32m[copied][39m[22m
 asset [1m[32m456.chunk.js[39m[22m 94 bytes [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m
 runtime modules 6.63 KiB 9 modules
 cacheable modules 73 bytes
   [1m./src/main.js[39m[22m 46 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
   [1m./src/app1.js[39m[22m 27 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-webpack 5.91.0 compiled [1m[32msuccessfully[39m[22m in 181 ms
+webpack 5.91.0 compiled [1m[32msuccessfully[39m[22m in 279 ms

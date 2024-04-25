@@ -8,9 +8,10 @@
     "mini:chunk": "npx tee-pipefail webpack --config webpack.mini-chunkname.config.js wp-mini-chunkname/build.log",
     "mini:remove": "npx tee-pipefail webpack --config webpack.mini-remove-demand.config.js wp-mini-remove-demand/build.log",
     "css": "npx tee-pipefail webpack --config webpack.exp-css.config.js wp-exp-css/build.log",
+    "css:demand": "npx tee-pipefail webpack --config webpack.exp-css-on-demand.config.js wp-exp-css-on-demand/build.log",
     "bundler:base": "npx tee-pipefail webpack --config webpack.bundler-base.config.js wp-bundler-base/build.log",
     "bundler:lazyfiles": "npx tee-pipefail webpack --config webpack.bundler-on-demand.config.js wp-bundler-on-demand/build.log",
-    "all": "concurrently npm:base npm:mini \"npm:mini:*\" npm:css \"npm:bundler:*\"",
+    "all": "concurrently npm:base npm:mini \"npm:mini:*\" npm:css \"npm:css:*\" \"npm:bundler:*\"",
     "server": "npx serve ."
   },
   "repository": {
@@ -26,6 +27,7 @@
   "license": "MIT",
   "devDependencies": {
     "concurrently": "^8.2.2",
+    "copy-webpack-plugin": "^12.0.2",
     "html-bundler-webpack-plugin": "^3.11.0",
     "mini-css-extract-plugin": "^2.8.1",
     "serve": "^14.2.1",

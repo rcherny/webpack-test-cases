@@ -9,10 +9,17 @@
   <body>
     <h1>webpack-test-cases - <code>wp-bundler-on-demand</code></h1>
     <p>Please use the devtools network panel.</p>
-    <p class="style">style node should be styled.</p>
-    <p class="appNode">
-      <a href="#appNode" data-info="wp-bundler-base">click for app node</a>
+    <p class="style">
+      style node should be styled (via entrypoint), enhanced by the chunk: chunk should be renamed;
     </p>
+    <p class="appNode">
+      <a href="#appNode" data-info="wp-bundler-on-demand">click for app node</a> with JS + CSS
+    </p>
+    <ul>
+      <li>The above should load <code>appNode.js</code>, renamed as <code>lazy-appNode.chunk.js</code></li>
+      <li>That file, in turn, should load <code>lazy-appNodeStyle.chunk.css</code></li>
+      <li>(and the undesired <code>lazy-appNodeStyle.chunk.js</code> file, because <code>import()</code> generates a module)</li>
+    </ul>
     <script src="/wp-bundler-on-demand/dist/main.js"></script>
   </body>
 </html>

@@ -1,5 +1,7 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin = require('copy-webpack-plugin');
+const {copyPlugin} = require('./helpers/copyPlugin');
 const RemoveEmptyScriptsPlugin = require("webpack-remove-empty-scripts");
 
 const ROOT = "wp-mini-remove-demand";
@@ -12,7 +14,7 @@ module.exports = {
     path: path.join(__dirname, `${ROOT}/dist/`),
     publicPath: `/${ROOT}/dist/`,
     clean: {
-      keep: /log|html/,
+      keep: /log/,
     },
     filename: "[name].js",
     chunkFilename: "[name].chunk.js",
@@ -27,6 +29,7 @@ module.exports = {
   },
 
   plugins: [
+    copyPlugin(CopyPlugin, ROOT),
     new RemoveEmptyScriptsPlugin({
       options: {
         verbose: true,

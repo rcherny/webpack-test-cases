@@ -4,7 +4,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 const {copyPlugin} = require('./helpers/copyPlugin');
 const RemoveEmptyScriptsPlugin = require("webpack-remove-empty-scripts");
 
-const ROOT = "wp-exp-css";
+const ROOT = "wp-exp-css-on-demand";
 
 module.exports = {
   mode: "production",

@@ -1,5 +1,7 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin = require('copy-webpack-plugin');
+const {copyPlugin} = require('./helpers/copyPlugin');
 
 const ROOT = "wp-base";
 
@@ -11,7 +13,7 @@ module.exports = {
     path: path.join(__dirname, `${ROOT}/dist/`),
     publicPath: `/${ROOT}/dist/`,
     clean: {
-      keep: /log|html/,
+      keep: /log/,
     },
     filename: "[name].js",
     chunkFilename: "[name].chunk.js",
@@ -21,7 +23,9 @@ module.exports = {
     main: "./src/main.js",
   },
 
-  plugins: [],
+  plugins: [
+    copyPlugin(CopyPlugin, ROOT)
+  ],
 
   module: {},
 };
