@@ -24,6 +24,29 @@ These test cases largely demo the ability to lazy import css via JS. This is not
 CSS largely should be imported via a `<link />` tag, but for various "routes" on a SPA application it is not unusual to
 load a JS file + its css support simultaneously after the page loads.
 
+## CSS Minimizer with Native?
+
+```js
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const cssNanoSettings = new CssMinimizerPlugin({
+  include: /\.s?css$/,
+  minimizerOptions: {
+    preset: [
+      'default',
+      {
+        svgo: false // svgo is run already by this time
+      }
+    ]
+  }
+});
+
+const defaultOutput = () => ({
+  minimize: true,
+  minimizer: [cssNanoSettings]
+});
+
+```
+
 <!-- ### baseline webpack build
 
 - `~/wp-base`
