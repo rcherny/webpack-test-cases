@@ -1,0 +1,9 @@
+p.appNode {
+  padding: 5px;
+  outline: 2px solid green;
+}
+p.style {
+  padding: 5px;
+  outline: 2px solid rebeccapurple;
+}
+head{--webpack-main:\.\/src\/appNode\.scss,\.\/src\/app1\.scss;}

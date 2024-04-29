@@ -20,12 +20,12 @@ module.exports = {
     },
     filename: "[name].js",
     chunkFilename: "[name].chunk.js",
-    // module: true, // breaks imports
-    // chunkFormat: "module" // breaks imports
+    module: true, // breaks imports
+    chunkFormat: "module" // breaks imports
   },
 
   experiments: {
-    // outputModule: true, // breaks imports
+    outputModule: true, // breaks imports
     css: true,
   },
 
