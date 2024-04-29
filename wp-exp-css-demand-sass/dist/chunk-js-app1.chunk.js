@@ -1,0 +1,22 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(self["webpackChunk"] = self["webpackChunk"] || []).push([["chunk-js-app1"],{
+
+/***/ "./src/app1.js":
+/*!*********************!*\
+  !*** ./src/app1.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _app1_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app1.scss */ \"./src/app1.scss\");\n// has never been supported\n// const url = new URL(\"./app1.scss\", import.meta.url);\n// console.log('app1.js > css url?', url);\n\n\nconsole.log(\">> app1.js (mini-remove)\");\n\nconst appNodeLoader = {\n  init() {\n    console.log(\"00\");\n    const nodeEl = document.querySelector(\".appNode\");\n    if (nodeEl) {\n      console.log(\"01\");\n      nodeEl.querySelector(\"a\").addEventListener(\"click\", (e) => {\n        e.preventDefault();\n        const aData = e.target?.dataset.info;\n        console.log(\"02\");\n        function loadStuff(d) {\n          __webpack_require__.e(/*! import() | lazy-appNode */ \"lazy-appNode\").then(__webpack_require__.bind(__webpack_require__, /*! ./appNode.js */ \"./src/appNode.js\")).then(\n            (module) => {\n              module.appNode.init(d);\n              console.log(\">> app1 >> done\");\n            },\n          );\n        }\n        loadStuff(aData);\n      });\n    } else {\n      console.log(\"03\");\n    }\n  },\n};\nappNodeLoader.init();\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (appNodeLoader);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvYXBwMS5qcyIsIm1hcHBpbmdzIjoiOzs7OztBQUFBO0FBQ0E7QUFDQTtBQUM4RDs7QUFFOUQ7O0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLFVBQVUsZ0tBQTZEO0FBQ3ZFO0FBQ0E7QUFDQTtBQUNBLGFBQWE7QUFDYjtBQUNBO0FBQ0E7QUFDQSxPQUFPO0FBQ1AsTUFBTTtBQUNOO0FBQ0E7QUFDQSxHQUFHO0FBQ0g7QUFDQTs7QUFFQSxpRUFBZSxhQUFhLEVBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvYXBwMS5qcz9hYTQ1Il0sInNvdXJjZXNDb250ZW50IjpbIi8vIGhhcyBuZXZlciBiZWVuIHN1cHBvcnRlZFxuLy8gY29uc3QgdXJsID0gbmV3IFVSTChcIi4vYXBwMS5zY3NzXCIsIGltcG9ydC5tZXRhLnVybCk7XG4vLyBjb25zb2xlLmxvZygnYXBwMS5qcyA+IGNzcyB1cmw/JywgdXJsKTtcbmltcG9ydCAvKiB3ZWJwYWNrQ2h1bmtOYW1lOiBcImNodW5rLWNzcy1hcHAxXCIgKi8gXCIuL2FwcDEuc2Nzc1wiO1xuXG5jb25zb2xlLmxvZyhcIj4+IGFwcDEuanMgKG1pbmktcmVtb3ZlKVwiKTtcblxuY29uc3QgYXBwTm9kZUxvYWRlciA9IHtcbiAgaW5pdCgpIHtcbiAgICBjb25zb2xlLmxvZyhcIjAwXCIpO1xuICAgIGNvbnN0IG5vZGVFbCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIuYXBwTm9kZVwiKTtcbiAgICBpZiAobm9kZUVsKSB7XG4gICAgICBjb25zb2xlLmxvZyhcIjAxXCIpO1xuICAgICAgbm9kZUVsLnF1ZXJ5U2VsZWN0b3IoXCJhXCIpLmFkZEV2ZW50TGlzdGVuZXIoXCJjbGlja1wiLCAoZSkgPT4ge1xuICAgICAgICBlLnByZXZlbnREZWZhdWx0KCk7XG4gICAgICAgIGNvbnN0IGFEYXRhID0gZS50YXJnZXQ/LmRhdGFzZXQuaW5mbztcbiAgICAgICAgY29uc29sZS5sb2coXCIwMlwiKTtcbiAgICAgICAgZnVuY3Rpb24gbG9hZFN0dWZmKGQpIHtcbiAgICAgICAgICBpbXBvcnQoLyogd2VicGFja0NodW5rTmFtZTogXCJsYXp5LWFwcE5vZGVcIiAqLyBcIi4vYXBwTm9kZS5qc1wiKS50aGVuKFxuICAgICAgICAgICAgKG1vZHVsZSkgPT4ge1xuICAgICAgICAgICAgICBtb2R1bGUuYXBwTm9kZS5pbml0KGQpO1xuICAgICAgICAgICAgICBjb25zb2xlLmxvZyhcIj4+IGFwcDEgPj4gZG9uZVwiKTtcbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgKTtcbiAgICAgICAgfVxuICAgICAgICBsb2FkU3R1ZmYoYURhdGEpO1xuICAgICAgfSk7XG4gICAgfSBlbHNlIHtcbiAgICAgIGNvbnNvbGUubG9nKFwiMDNcIik7XG4gICAgfVxuICB9LFxufTtcbmFwcE5vZGVMb2FkZXIuaW5pdCgpO1xuXG5leHBvcnQgZGVmYXVsdCBhcHBOb2RlTG9hZGVyO1xuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/app1.js\n");
+
+/***/ })
+
+}]);

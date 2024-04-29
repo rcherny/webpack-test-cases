@@ -1,15 +1,14 @@
-assets by path [1m[32m*.js[39m[22m 3.08 KiB
-  asset [1m[32mmain.js[39m[22m 2.95 KiB [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (name: main)
-  asset [1m[32mchunk-js-app1.chunk.js[39m[22m 132 bytes [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (name: chunk-js-app1)
-  asset [1m[32mstyle.js[39m[22m 0 bytes [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (name: style)
+assets by path [1m[32m*.js[39m[22m 419 bytes
+  asset [1m[32mmain.js[39m[22m 419 bytes [1m[33m[compared for emit][39m[22m [javascript module] [1m[32m[minimized][39m[22m (name: main)
+  asset [1m[32mstyle.js[39m[22m 0 bytes [1m[33m[compared for emit][39m[22m [javascript module] [1m[32m[minimized][39m[22m (name: style)
 assets by path [1m[32m*.css[39m[22m 221 bytes
   asset [1m[32mstyle.css[39m[22m 156 bytes [1m[33m[compared for emit][39m[22m (name: style)
-  asset [1m[32mchunk-js-app1.chunk.css[39m[22m 65 bytes [1m[33m[compared for emit][39m[22m (name: chunk-js-app1)
-asset [1m[32mindex.html[39m[22m 750 bytes [1m[33m[compared for emit][39m[22m [from: src/index.html] [1m[32m[copied][39m[22m
-Entrypoint [1mmain[39m[22m 2.95 KiB = [1m[32mmain.js[39m[22m
+  asset [1m[32mmain.css[39m[22m 65 bytes [1m[33m[compared for emit][39m[22m (name: main)
+asset [1m[32mindex.html[39m[22m 780 bytes [1m[32m[emitted][39m[22m [from: src/index.html] [1m[32m[copied][39m[22m
+Entrypoint [1mmain[39m[22m 484 bytes = [1m[32mmain.css[39m[22m 65 bytes [1m[32mmain.js[39m[22m 419 bytes
 Entrypoint [1mstyle[39m[22m 156 bytes = [1m[32mstyle.css[39m[22m 156 bytes [1m[32mstyle.js[39m[22m 0 bytes
-runtime modules 9.78 KiB 17 modules
-orphan modules 3.42 KiB [1m[33m[orphan][39m[22m 5 modules
+orphan modules 3.42 KiB (javascript) 1.83 KiB (runtime) [1m[33m[orphan][39m[22m 13 modules
+runtime modules 274 bytes 1 module
 cacheable modules 239 bytes (javascript) 219 bytes (css/mini-extract)
   javascript modules 239 bytes
     [1m./src/main.js[39m[22m 86 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
@@ -18,4 +17,4 @@ cacheable modules 239 bytes (javascript) 219 bytes (css/mini-extract)
   css modules 219 bytes
     css ../node_modules/css-loader/dist/cjs.js![1m./src/style.css[39m[22m 155 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
     css ../node_modules/css-loader/dist/cjs.js![1m./src/app1.css[39m[22m 64 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-webpack 5.91.0 compiled [1m[32msuccessfully[39m[22m in 453 ms
+webpack 5.91.0 compiled [1m[32msuccessfully[39m[22m in 386 ms

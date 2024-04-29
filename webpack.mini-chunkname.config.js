@@ -18,10 +18,12 @@ module.exports = {
     },
     filename: "[name].js",
     chunkFilename: "[name].chunk.js",
+    module: true,
+    chunkFormat: 'module'
   },
-  // experiments: {
-  //   outputModule: true,
-  // },
+  experiments: {
+    outputModule: true,
+  },
 
   entry: {
     main: "./src/main.js",

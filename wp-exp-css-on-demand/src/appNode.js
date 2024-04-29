@@ -1,9 +1,9 @@
-function loadCSSLazy(url) {
-  const style = document.createElement("link");
-  style.href = url;
-  style.rel = "stylesheet";
-  document.head.appendChild(style);
-}
+// function loadCSSLazy(url) {
+//   const style = document.createElement("link");
+//   style.href = url;
+//   style.rel = "stylesheet";
+//   document.head.appendChild(style);
+// }
 
 const appNode = {
   init(data) {

@@ -14,21 +14,21 @@
 [38;5;112m         script:[39m [36mwp-bundler-base/src/main.js[39m
               -> /wp-bundler-base/dist/main.js
 
-assets by chunk 795 bytes (name: __bundler-plugin-entry__index)
-  asset [1m[32mindex.html[39m[22m 576 bytes [1m[33m[compared for emit][39m[22m (name: __bundler-plugin-entry__index)
+assets by chunk 811 bytes (name: __bundler-plugin-entry__index)
+  asset [1m[32mindex.html[39m[22m 592 bytes [1m[33m[compared for emit][39m[22m (name: __bundler-plugin-entry__index)
   asset [1m[32mstyle.css[39m[22m 155 bytes [1m[33m[compared for emit][39m[22m (name: __bundler-plugin-entry__index)
   asset [1m[32mmain.chunk.css[39m[22m 64 bytes [1m[33m[compared for emit][39m[22m (name: __bundler-plugin-entry__index)
 assets by path [1m[32m*.js[39m[22m 2.21 KiB
   asset [1m[32mmain.js[39m[22m 1.97 KiB [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (name: main)
   asset [1m[32mchunk-js-app1.chunk.js[39m[22m 244 bytes [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (name: chunk-js-app1)
-Entrypoint [1m__bundler-plugin-entry__index[39m[22m 795 bytes = [1m[32mindex.html[39m[22m 576 bytes [1m[32mstyle.css[39m[22m 155 bytes [1m[32mmain.chunk.css[39m[22m 64 bytes
+Entrypoint [1m__bundler-plugin-entry__index[39m[22m 811 bytes = [1m[32mindex.html[39m[22m 592 bytes [1m[32mstyle.css[39m[22m 155 bytes [1m[32mmain.chunk.css[39m[22m 64 bytes
 Entrypoint [1mmain[39m[22m 1.97 KiB = [1m[32mmain.js[39m[22m
 runtime modules 12 KiB 20 modules
 orphan modules 2.83 KiB [1m[33m[orphan][39m[22m 4 modules
-cacheable modules 1.53 KiB
+cacheable modules 1.55 KiB
   modules by path [1m./src/*.js[39m[22m 303 bytes
     [1m./src/main.js[39m[22m 86 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
     [1m./src/app1.js[39m[22m 217 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-  [1m./src/template.html[39m[22m 680 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+  [1m./src/template.html[39m[22m 697 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
   [1m./src/style.css[39m[22m 587 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-[1m[48;5;118m[30m HTML Bundler Plugin [39m[1m[49m[32m ▶▶▶[39m[1m[39m[22m (webpack 5.91.0) compiled [1m[32msuccessfully[39m[22m in 455 ms
+[1m[48;5;118m[30m HTML Bundler Plugin [39m[1m[49m[32m ▶▶▶[39m[1m[39m[22m (webpack 5.91.0) compiled [1m[32msuccessfully[39m[22m in 542 ms

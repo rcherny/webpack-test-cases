@@ -1,0 +1,58 @@
+assets by path [1m[32m*.js[39m[22m 4.72 KiB
+  asset [1m[32mmain.js[39m[22m 3.99 KiB [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (name: main)
+  asset [1m[32mchunk-js-app1.chunk.js[39m[22m 524 bytes [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (name: chunk-js-app1)
+  asset [1m[32mlazy-appNode.chunk.js[39m[22m 220 bytes [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (name: lazy-appNode)
+assets by path [1m[32m*.css[39m[22m 354 bytes
+  asset [1m[32mstyle.css[39m[22m 180 bytes [1m[33m[compared for emit][39m[22m (name: style)
+  asset [1m[32mchunk-js-app1.chunk.css[39m[22m 90 bytes [1m[33m[compared for emit][39m[22m (name: chunk-js-app1)
+  asset [1m[32mlazy-appNodeStyle.chunk.css[39m[22m 84 bytes [1m[33m[compared for emit][39m[22m (name: lazy-appNodeStyle)
+asset [1m[32mindex.html[39m[22m 1.44 KiB [1m[33m[compared for emit][39m[22m [from: src/index.html] [1m[32m[copied][39m[22m
+runtime modules 14.5 KiB 17 modules
+cacheable modules 1.48 KiB (javascript) 277 bytes (css)
+  javascript modules 1.48 KiB
+    [1m./src/main.js[39m[22m 86 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+    [1m./src/app1.js[39m[22m 856 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+    [1m./src/appNode.js[39m[22m 574 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+  modules with warnings 277 bytes [1m[33m[warnings][39m[22m
+    [1mcss ./src/style.css[39m[22m 155 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m [1m[33m[2 warnings][39m[22m
+    [1mcss ./src/app1.css[39m[22m 64 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m [1m[33m[2 warnings][39m[22m
+    [1mcss ./src/appNode.css[39m[22m 58 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m [1m[33m[2 warnings][39m[22m
+
+[1m[33mWARNING[39m[22m in [1mcss ./src/appNode.css[39m[22m
+[1mModule Warning (from ../node_modules/css-loader/dist/cjs.js):
+You can't use `experiments.css` (`experiments.futureDefaults` enable built-in CSS support by default) and `css-loader` together, please set `experiments.css` to `false` or set `{ type: "javascript/auto" }` for rules with `css-loader` in your webpack config (now css-loader does nothing).[39m[22m
+ @ ./src/appNode.js 12:26-92
+ @ ./src/app1.js 17:10-71
+ @ ./src/main.js 3:0-59
+
+[1m[33mWARNING[39m[22m in [1mcss ./src/appNode.css[39m[22m
+[1mModule Warning (from ../node_modules/mini-css-extract-plugin/dist/loader.js):
+You can't use `experiments.css` (`experiments.futureDefaults` enable built-in CSS support by default) and `mini-css-extract-plugin` together, please set `experiments.css` to `false` or set `{ type: "javascript/auto" }` for rules with `mini-css-extract-plugin` in your webpack config (now `mini-css-extract-plugin` does nothing).[39m[22m
+ @ ./src/appNode.js 12:26-92
+ @ ./src/app1.js 17:10-71
+ @ ./src/main.js 3:0-59
+
+[1m[33mWARNING[39m[22m in [1mcss ./src/app1.css[39m[22m
+[1mModule Warning (from ../node_modules/css-loader/dist/cjs.js):
+You can't use `experiments.css` (`experiments.futureDefaults` enable built-in CSS support by default) and `css-loader` together, please set `experiments.css` to `false` or set `{ type: "javascript/auto" }` for rules with `css-loader` in your webpack config (now css-loader does nothing).[39m[22m
+ @ ./src/app1.js 2:0-61
+ @ ./src/main.js 3:0-59
+
+[1m[33mWARNING[39m[22m in [1mcss ./src/app1.css[39m[22m
+[1mModule Warning (from ../node_modules/mini-css-extract-plugin/dist/loader.js):
+You can't use `experiments.css` (`experiments.futureDefaults` enable built-in CSS support by default) and `mini-css-extract-plugin` together, please set `experiments.css` to `false` or set `{ type: "javascript/auto" }` for rules with `mini-css-extract-plugin` in your webpack config (now `mini-css-extract-plugin` does nothing).[39m[22m
+ @ ./src/app1.js 2:0-61
+ @ ./src/main.js 3:0-59
+
+[1m[33mWARNING[39m[22m in [1mcss ./src/style.css[39m[22m
+[1mModule Warning (from ../node_modules/css-loader/dist/cjs.js):
+You can't use `experiments.css` (`experiments.futureDefaults` enable built-in CSS support by default) and `css-loader` together, please set `experiments.css` to `false` or set `{ type: "javascript/auto" }` for rules with `css-loader` in your webpack config (now css-loader does nothing).[39m[22m
+
+[1m[33mWARNING[39m[22m in [1mcss ./src/style.css[39m[22m
+[1mModule Warning (from ../node_modules/mini-css-extract-plugin/dist/loader.js):
+You can't use `experiments.css` (`experiments.futureDefaults` enable built-in CSS support by default) and `mini-css-extract-plugin` together, please set `experiments.css` to `false` or set `{ type: "javascript/auto" }` for rules with `mini-css-extract-plugin` in your webpack config (now `mini-css-extract-plugin` does nothing).[39m[22m
+
+6 warnings have detailed information that is not shown.
+Use 'stats.errorDetails: true' resp. '--stats-error-details' to show it.
+
+webpack 5.91.0 compiled with [1m[33m6 warnings[39m[22m in 581 ms

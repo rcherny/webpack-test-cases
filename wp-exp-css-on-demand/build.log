@@ -1,20 +1,22 @@
-assets by path [1m[32m*.js[39m[22m 4.7 KiB
-  asset [1m[32mmain.js[39m[22m 3.98 KiB [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (name: main)
-  asset [1m[32mchunk-js-app1.chunk.js[39m[22m 524 bytes [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (name: chunk-js-app1)
-  asset [1m[32mlazy-appNode.chunk.js[39m[22m 219 bytes [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (name: lazy-appNode)
-assets by path [1m[32m*.css[39m[22m 354 bytes
-  asset [1m[32mstyle.css[39m[22m 181 bytes [1m[33m[compared for emit][39m[22m (name: style)
-  asset [1m[32mchunk-js-app1.chunk.css[39m[22m 90 bytes [1m[33m[compared for emit][39m[22m (name: chunk-js-app1)
-  asset [1m[32mlazy-appNodeStyle.chunk.css[39m[22m 83 bytes [1m[33m[compared for emit][39m[22m (name: lazy-appNodeStyle)
-asset [1m[32mindex.html[39m[22m 1.17 KiB [1m[33m[compared for emit][39m[22m [from: src/index.html] [1m[32m[copied][39m[22m
+assets by status 4.87 KiB [emitted]
+  assets by path *.js 4.7 KiB
+    asset main.js 3.98 KiB [emitted] [minimized] (name: main)
+    asset chunk-js-app1.chunk.js 524 bytes [emitted] [minimized] (name: chunk-js-app1)
+    asset lazy-appNode.chunk.js 219 bytes [emitted] [minimized] (name: lazy-appNode)
+  assets by path *.css 173 bytes
+    asset chunk-js-app1.chunk.css 90 bytes [emitted] (name: chunk-js-app1)
+    asset lazy-appNodeStyle.chunk.css 83 bytes [emitted] (name: lazy-appNodeStyle)
+assets by status 1.36 KiB [compared for emit]
+  asset index.html 1.19 KiB [compared for emit] [from: src/index.html] [copied]
+  asset style.css 181 bytes [compared for emit] (name: style)
 runtime modules 14.4 KiB 15 modules
-cacheable modules 1.48 KiB (javascript) 277 bytes (css)
-  javascript modules 1.48 KiB
-    [1m./src/main.js[39m[22m 86 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-    [1m./src/app1.js[39m[22m 856 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-    [1m./src/appNode.js[39m[22m 574 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+cacheable modules 1.5 KiB (javascript) 277 bytes (css)
+  javascript modules 1.5 KiB
+    ./src/main.js 86 bytes [built] [code generated]
+    ./src/app1.js 856 bytes [built] [code generated]
+    ./src/appNode.js 592 bytes [built] [code generated]
   css modules 277 bytes
-    [1mcss ./src/style.css[39m[22m 155 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-    [1mcss ./src/app1.css[39m[22m 64 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-    [1mcss ./src/appNode.css[39m[22m 58 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-webpack 5.91.0 compiled [1m[32msuccessfully[39m[22m in 322 ms
+    css ./src/style.css 155 bytes [built] [code generated]
+    css ./src/app1.css 64 bytes [built] [code generated]
+    css ./src/appNode.css 58 bytes [built] [code generated]
+webpack 5.91.0 compiled successfully in 258 ms

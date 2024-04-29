@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/native-esm/">
+    <title>Browse webpack-test-cases...</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Native ESM Test</h1>
+    <p>Please use the devtools network panel.</p>
+    <p class="style">
+      style node should be styled (via entrypoint), enhanced by the chunk
+    </p>
+    <p><strong>Additionally</strong>: On demand lazy loading:</p>
+    <p class="appNode">
+      <a href="#appNode" data-info="native-esm">click for app node</a> with JS + CSS
+    </p>
+    <ul>
+      <li>The above should load <code>lazy-appNode.chunk.js</code></li>
+      <li>That file, in turn, should load <code>lazy-appNodeStyle.chunk.css</code></li>
+    </ul>
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>

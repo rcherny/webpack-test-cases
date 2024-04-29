@@ -1,0 +1,20 @@
+assets by path [1m[32m*.js[39m[22m 24.3 KiB
+  asset [1m[32mmain.js[39m[22m 17.2 KiB [1m[33m[compared for emit][39m[22m (name: main)
+  asset [1m[32mchunk-js-app1.chunk.js[39m[22m 4.18 KiB [1m[33m[compared for emit][39m[22m (name: chunk-js-app1)
+  asset [1m[32mlazy-appNode.chunk.js[39m[22m 2.98 KiB [1m[33m[compared for emit][39m[22m (name: lazy-appNode)
+assets by path [1m[32m*.css[39m[22m 427 bytes
+  asset [1m[32mstyle.css[39m[22m 198 bytes [1m[33m[compared for emit][39m[22m (name: style)
+  asset [1m[32mlazy-appNodeStyle.chunk.css[39m[22m 115 bytes [1m[33m[compared for emit][39m[22m (name: lazy-appNodeStyle)
+  asset [1m[32mchunk-js-app1.chunk.css[39m[22m 114 bytes [1m[33m[compared for emit][39m[22m (name: chunk-js-app1)
+asset [1m[32mindex.html[39m[22m 1.2 KiB [1m[33m[compared for emit][39m[22m [from: src/index.html] [1m[32m[copied][39m[22m
+runtime modules 13.5 KiB 15 modules
+cacheable modules 1.58 KiB (javascript) 275 bytes (css)
+  javascript modules 1.58 KiB
+    [1m./src/main.js[39m[22m 85 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+    [1m./src/app1.js[39m[22m 956 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+    [1m./src/appNode.js[39m[22m 575 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+  css modules 275 bytes
+    [1mcss ./src/style.css[39m[22m 155 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+    [1mcss ./src/app1.scss[39m[22m 63 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+    [1mcss ./src/appNode.scss[39m[22m 57 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.91.0 compiled [1m[32msuccessfully[39m[22m in 387 ms

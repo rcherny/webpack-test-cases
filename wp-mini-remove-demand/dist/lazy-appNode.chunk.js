@@ -1,1 +1,1 @@
-(self.webpackChunk=self.webpackChunk||[]).push([[127],{184:(e,p,n)=>{n.r(p),n.d(p,{appNode:()=>a});const a={init(e){n.e(418).then(n.bind(n,662)),console.log(">> app1 >> appNode.js >> init(), data:",e)}}}}]);
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[127],{184:(e,t,n)=>{n.r(t),n.d(t,{appNode:()=>a});const a={async init(e){n.e(418).then(n.bind(n,662));const t=await n.e(892).then(n.bind(n,758));document.adoptedStyleSheets=[t.default],console.log(">> app1 >> appNode.js >> init(), data:",e)}}}}]);

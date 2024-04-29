@@ -18,10 +18,12 @@ module.exports = {
     },
     filename: "[name].js",
     chunkFilename: "[name].chunk.js",
+    // module: true,
+    // chunkFormat: 'module'
   },
-  experiments: {
-    outputModule: true, // not doing much
-  },
+  // experiments: {
+  //   outputModule: true, // not doing much
+  // },
 
   entry: {
     main: "./src/main.js",
@@ -49,4 +51,13 @@ module.exports = {
       },
     ],
   },
+
+  // optimization: {
+  //   concatenateModules: true,
+  //   providedExports: true,
+  //   usedExports: true,
+  //   splitChunks: {
+  //     chunks: 'async'
+  //   }
+  // }
 };
