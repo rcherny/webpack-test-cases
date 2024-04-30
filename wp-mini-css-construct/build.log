@@ -1,0 +1,26 @@
+assets by status 4.33 KiB [emitted]
+  assets by status 3.39 KiB [compared for emit]
+    asset main.js 3.13 KiB [emitted] [compared for emit] [minimized] (name: main)
+    asset lazy-appNode.chunk.js 264 bytes [emitted] [compared for emit] [minimized] (name: lazy-appNode)
+  asset chunk-js-app1.chunk.js 811 bytes [emitted] [minimized] (name: chunk-js-app1)
+  asset 842.chunk.js 93 bytes [emitted] [minimized]
+  asset 842.chunk.css 59 bytes [emitted]
+asset index.html 1.37 KiB [compared for emit] [from: src/index.html] [copied]
+asset style.css 156 bytes [compared for emit] (name: style)
+asset chunk-js-app1.chunk.css 65 bytes [compared for emit] (name: chunk-js-app1)
+runtime modules 11.1 KiB 22 modules
+orphan modules 3.9 KiB [orphan] 6 modules
+cacheable modules 2.56 KiB (javascript) 277 bytes (css/mini-extract)
+  javascript modules 2.56 KiB
+    modules by path ./src/*.js 2.46 KiB
+      ./src/main.js 138 bytes [built] [code generated]
+      ./src/app1.js + 1 modules 1 KiB [built] [code generated]
+      + 2 modules
+    modules by path ./src/*.css 100 bytes
+      ./src/style.css 50 bytes [built] [code generated]
+      ./src/appNode.css 50 bytes [built] [code generated]
+  css modules 277 bytes
+    css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./src/style.css 155 bytes [built] [code generated]
+    css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./src/app1.css 64 bytes [built] [code generated]
+    css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./src/appNode.css 58 bytes [built] [code generated]
+webpack 5.91.0 compiled successfully in 285 ms
