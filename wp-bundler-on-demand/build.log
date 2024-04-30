@@ -1,44 +1,46 @@
 
-[30m[42m HTML Bundler Plugin [49m[39m[48;5;193m[30m Entry processing [39m[49m
+ HTML Bundler Plugin  Entry processing 
 
-[48;5;27m[97m ENTRY [39m[49m[48;5;195m[30m index.html [39m[49m
-[35msource:[39m [96mwp-bundler-on-demand/src/template.html[39m
-[35moutput:[39m [96mwp-bundler-on-demand/dist/[39m
-[32massets:[39m
-[38;5;112m          style:[39m [36mwp-bundler-on-demand/src/style.css[39m
+ ENTRY  index.html 
+source: wp-bundler-on-demand/src/template.html
+output: wp-bundler-on-demand/dist/
+assets:
+          style: wp-bundler-on-demand/src/style.css
               -> /wp-bundler-on-demand/dist/style.css
-[38;5;112m          style:[39m [36mwp-bundler-on-demand/src/appNode2.css?url[39m
+          style: wp-bundler-on-demand/src/appNode2.css?url
               -> appNode2.css
-[38;5;112m  import styles:[39m [38;5;244mwp-bundler-on-demand/src/main.js[39m
+          style: wp-bundler-on-demand/src/appNode2.css?url
+              -> appNode2.css
+  import styles: wp-bundler-on-demand/src/main.js
               -> /wp-bundler-on-demand/dist/main.chunk.css
-                 [38;5;214mimports:[39m
-                     [38;5;143mwp-bundler-on-demand/src/app1.css[39m
-                     [38;5;143mwp-bundler-on-demand/src/appNode.css[39m
-[38;5;112m         script:[39m [36mwp-bundler-on-demand/src/main.js[39m
+                 imports:
+                     wp-bundler-on-demand/src/app1.css
+                     wp-bundler-on-demand/src/appNode.css
+         script: wp-bundler-on-demand/src/main.js
               -> /wp-bundler-on-demand/dist/main.js
 
-assets by path [1m[32m*.js[39m[22m 3.26 KiB
-  asset [1m[32mmain.js[39m[22m 2.47 KiB [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (name: main)
-  asset [1m[32mchunk-js-app1.chunk.js[39m[22m 517 bytes [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (name: chunk-js-app1)
-  asset [1m[32mlazy-appNode.chunk.js[39m[22m 229 bytes [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (name: lazy-appNode)
-  asset [1m[32mlazy-appNodeStyle.chunk.js[39m[22m 69 bytes [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (name: lazy-appNodeStyle)
+assets by path *.js 3.32 KiB
+  asset main.js 2.47 KiB [compared for emit] [minimized] (name: main)
+  asset chunk-js-app1.chunk.js 517 bytes [compared for emit] [minimized] (name: chunk-js-app1)
+  asset lazy-appNode.chunk.js 289 bytes [compared for emit] [minimized] (name: lazy-appNode)
+  asset lazy-appNodeStyle.chunk.js 69 bytes [compared for emit] [minimized] (name: lazy-appNodeStyle)
 assets by chunk 1.41 KiB (name: __bundler-plugin-entry__index)
-  asset [1m[32mindex.html[39m[22m 1.13 KiB [1m[33m[compared for emit][39m[22m (name: __bundler-plugin-entry__index)
-  asset [1m[32mstyle.css[39m[22m 155 bytes [1m[33m[compared for emit][39m[22m (name: __bundler-plugin-entry__index)
-  asset [1m[32mmain.chunk.css[39m[22m 122 bytes [1m[33m[compared for emit][39m[22m (name: __bundler-plugin-entry__index)
-asset [1m[32mappNode2.css[39m[22m 106 bytes [1m[33m[compared for emit][39m[22m [from: src/appNode2.css?url] (auxiliary name: lazy-appNode)
-Entrypoint [1m__bundler-plugin-entry__index[39m[22m 1.41 KiB = [1m[32mindex.html[39m[22m 1.13 KiB [1m[32mstyle.css[39m[22m 155 bytes [1m[32mmain.chunk.css[39m[22m 122 bytes
-Entrypoint [1mmain[39m[22m 2.47 KiB = [1m[32mmain.js[39m[22m
+  asset index.html 1.13 KiB [compared for emit] (name: __bundler-plugin-entry__index)
+  asset style.css 155 bytes [compared for emit] (name: __bundler-plugin-entry__index)
+  asset main.chunk.css 122 bytes [compared for emit] (name: __bundler-plugin-entry__index)
+asset appNode2.css 99 bytes [emitted] [from: src/appNode2.css?url] (auxiliary name: lazy-appNode)
+Entrypoint __bundler-plugin-entry__index 1.41 KiB = index.html 1.13 KiB style.css 155 bytes main.chunk.css 122 bytes
+Entrypoint main 2.47 KiB = main.js
 runtime modules 16.2 KiB 30 modules
-orphan modules 3.8 KiB [1m[33m[orphan][39m[22m 6 modules
-cacheable modules 3.46 KiB (javascript) 106 bytes (asset)
-  modules by path [1m./src/*.js[39m[22m 1.56 KiB
-    [1m./src/main.js[39m[22m 86 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-    [1m./src/app1.js[39m[22m 856 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-    [1m./src/appNode.js + 1 modules[39m[22m 655 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-  modules by path [1m./src/*.css[39m[22m 669 bytes (javascript) 106 bytes (asset)
-    [1m./src/style.css[39m[22m 587 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-    [1m./src/appNode2.css?url[39m[22m 42 bytes (javascript) 106 bytes (asset) [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-    [1m./src/appNode.css[39m[22m 40 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-  [1m./src/template.html[39m[22m 1.24 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-[1m[48;5;118m[30m HTML Bundler Plugin [39m[1m[49m[32m ▶▶▶[39m[1m[39m[22m (webpack 5.91.0) compiled [1m[32msuccessfully[39m[22m in 560 ms
+orphan modules 3.79 KiB [orphan] 6 modules
+cacheable modules 3.5 KiB (javascript) 99 bytes (asset)
+  modules by path ./src/*.js 1.6 KiB
+    ./src/main.js 86 bytes [built] [code generated]
+    ./src/app1.js 856 bytes [built] [code generated]
+    ./src/appNode.js + 1 modules 696 bytes [built] [code generated]
+  modules by path ./src/*.css 669 bytes (javascript) 99 bytes (asset)
+    ./src/style.css 587 bytes [built] [code generated]
+    ./src/appNode2.css?url 42 bytes (javascript) 99 bytes (asset) [built] [code generated]
+    ./src/appNode.css 40 bytes [built] [code generated]
+  ./src/template.html 1.24 KiB [built] [code generated]
+ HTML Bundler Plugin  ▶▶▶ (webpack 5.91.0) compiled successfully in 311 ms

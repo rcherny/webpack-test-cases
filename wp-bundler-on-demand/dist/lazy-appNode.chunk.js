@@ -1,1 +1,1 @@
-"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[127],{225:(e,p,n)=>{n.r(p),n.d(p,{appNode:()=>s}),n.p;const s={init(e){n.e(418).then(n.t.bind(n,632,23)),console.log(">> app1 >> appNode.js >> init(), data:",e)}}}}]);
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[127],{225:(s,p,e)=>{e.r(p),e.d(p,{appNode:()=>n});const o=e.p+"appNode2.css";console.log("appNode.js, css url",o);const n={init(s){e.e(418).then(e.t.bind(e,632,23)),console.log(">> app1 >> appNode.js >> init(), data:",s)}}}}]);
