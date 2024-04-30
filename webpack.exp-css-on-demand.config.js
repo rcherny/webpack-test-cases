@@ -18,6 +18,8 @@ module.exports = {
     },
     filename: "[name].js",
     chunkFilename: "[name].chunk.js",
+    cssFilename: "[name].css",
+    cssChunkFilename: "[name].chunk.css",
     module: true, // breaks imports
     chunkFormat: "module" // breaks imports
   },

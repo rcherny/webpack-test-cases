@@ -1,18 +1,13 @@
-assets by chunk 1.25 KiB (name: main)
-  asset main.js 1.1 KiB [compared for emit] [javascript module] [minimized] (name: main)
-  asset main.css 153 bytes [compared for emit] (name: main)
+assets by status 59 bytes [cached] 1 asset
+asset main.js 1.35 KiB [compared for emit] [javascript module] [minimized] (name: main)
 asset index.html 1.2 KiB [compared for emit] [from: src/index.html] [copied]
 asset style.css 181 bytes [compared for emit] (name: style)
-Entrypoint main 1.25 KiB = main.js 1.1 KiB main.css 153 bytes
-Entrypoint style 181 bytes = style.css
-runtime modules 670 bytes 3 modules
-cacheable modules 1.5 KiB (javascript) 277 bytes (css)
-  javascript modules 1.5 KiB
+runtime modules 758 bytes 5 modules
+cacheable modules 1.83 KiB (javascript) 155 bytes (css) 59 bytes (asset)
+  javascript modules 1.79 KiB
     ./src/main.js 86 bytes [built] [code generated]
-    ./src/app1.js 856 bytes [built] [code generated]
-    ./src/appNode.js 592 bytes [built] [code generated]
-  css modules 277 bytes
-    css ./src/style.css 155 bytes [built] [code generated]
-    css ./src/app1.css 64 bytes [built] [code generated]
-    css ./src/appNode.css 58 bytes [built] [code generated]
-webpack 5.91.0 compiled successfully in 183 ms
+    ./src/app1.js 859 bytes [built] [code generated]
+    ./src/appNode.js 886 bytes [built] [code generated]
+  css ./src/style.css 155 bytes [built] [code generated]
+  ./src/appNode2.css 42 bytes (javascript) 59 bytes (asset) [built] [code generated]
+webpack 5.91.0 compiled successfully in 200 ms

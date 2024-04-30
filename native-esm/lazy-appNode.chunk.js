@@ -7,6 +7,7 @@ const appNode = {
     const loadcss = () => fetchCSS("./lazy-appNodeStyle.css");
     // lazy load css with JS module
     loadcss();
+    // fetch('./appNode2.css')
     console.log(">> app1 >> appNode.js >> init(), data:", data);
   },
 };
