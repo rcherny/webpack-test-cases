@@ -52,58 +52,49 @@ module.exports = {
       {
         test: /\.css$/i,
         sideEffects: true,
+        // use: [
         oneOf: [
+          // {
+          //   use: [MiniCssExtractPlugin.loader, 'css-loader']
+          //   // loader: MiniCssExtractPlugin.loader
+          // },
+          // CSS in Firefox: "Ruleset ignored due to bad selector."
+          // sounds like a module thing ... adoptedStyleSheets shows css objects
           {
             assert: { type: "css" },
             loader: "css-loader",
             options: {
               exportType: "css-style-sheet",
-              esModule: true
-              // Other options
+              esModule: true,
+              modules: { // specific to css modules
+                namedExport: true
+              }
             }
           },
           {
             use: [MiniCssExtractPlugin.loader, 'css-loader']
+            // loader: MiniCssExtractPlugin.loader
           }
         ]
-        // assert: { type: "css" },
-        // loader: "css-loader",
-        // options: {
-        //   exportType: "css-style-sheet",
-        // },
-        // include: ''
-        // assert: { type: "css" },
-        // test: /\.(css)/,
-        // type: "css/auto",
-        // type: "css",
-        // use: [
-        //   MiniCssExtractPlugin.loader,
-        //   {
-        //     loader: "css-loader",
-        //     options: {
-        //       // exportType: "css-style-sheet",
-        //     },
-        //   },
-        // ],
       },
     ],
   },
 
   optimization: {
-    minimize: false,
+    minimize: true, // can see the css embedded inside of main.js for some reason
     removeEmptyChunks: true,
     removeAvailableModules: false,
     mergeDuplicateChunks: false,
     sideEffects: true,
-    moduleIds: 'named',
-    chunkIds: 'named',
-    runtimeChunk: 'single',
-    // concatenateModules: false,
-    // providedExports: false,
-    // usedExports: false,
-    // splitChunks: {
-    //   chunks: 'async'
-    // }
+  //   moduleIds: 'named',
+  //   chunkIds: 'named',
+  //   runtimeChunk: 'single',
+    concatenateModules: false,
+    providedExports: false,
+    usedExports: false,
+    splitChunks: {
+      chunks: 'async'
+    }
   }
 };
 
