@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[127],{184:(a,e,n)=>{n.r(e),n.d(e,{appNode:()=>p});var s=n(325);const p={async init(a){const e=await n.e(842).then(n.bind(n,842));(0,s.A)(e),console.log(">> app1 >> appNode.js >> init(), data:",a)}}}}]);

@@ -8,6 +8,7 @@ const ROOT = "wp-mini-css-construct";
 // this includes lazy loaded, on demand chunks
 
 module.exports = {
+  // mode: "development",
   mode: "production",
   context: path.join(__dirname, `./${ROOT}`),
 
@@ -19,17 +20,19 @@ module.exports = {
     },
     filename: "[name].js",
     chunkFilename: "[name].chunk.js",
-    // module: true,
-    // chunkFormat: 'module'
+    module: true, // breaks imports
+    chunkFormat: 'module' // breaks imports
   },
-  // experiments: {
-  //   outputModule: true, // not doing much
-  // },
+  experiments: {
+    outputModule: true, // breaks imports
+  },
 
   entry: {
     main: "./src/main.js",
     style: "./src/style.css",
   },
+
+  stats: 'verbose',
 
   plugins: [
     copyPlugin(CopyPlugin, ROOT),
@@ -46,36 +49,75 @@ module.exports = {
 
   module: {
     rules: [
-      // {
-      //   test: /\.(css)/,
-      //   use: [MiniCssExtractPlugin.loader, 'css-loader'],
-      //   include: ''
-      // },
       {
-        // include: ''
-        test: /\.(css)/,
-        // type: "css/auto",
-        // type: "css",
-        use: [
-          MiniCssExtractPlugin.loader,
+        test: /\.css$/i,
+        sideEffects: true,
+        oneOf: [
           {
+            assert: { type: "css" },
             loader: "css-loader",
             options: {
-              // assert: { type: "css" },
-              // exportType: "css-style-sheet",
-            },
+              exportType: "css-style-sheet",
+              esModule: true
+              // Other options
+            }
           },
-        ],
+          {
+            use: [MiniCssExtractPlugin.loader, 'css-loader']
+          }
+        ]
+        // assert: { type: "css" },
+        // loader: "css-loader",
+        // options: {
+        //   exportType: "css-style-sheet",
+        // },
+        // include: ''
+        // assert: { type: "css" },
+        // test: /\.(css)/,
+        // type: "css/auto",
+        // type: "css",
+        // use: [
+        //   MiniCssExtractPlugin.loader,
+        //   {
+        //     loader: "css-loader",
+        //     options: {
+        //       // exportType: "css-style-sheet",
+        //     },
+        //   },
+        // ],
       },
     ],
   },
 
-  // optimization: {
-  //   concatenateModules: true,
-  //   providedExports: true,
-  //   usedExports: true,
-  //   splitChunks: {
-  //     chunks: 'async'
-  //   }
-  // }
+  optimization: {
+    minimize: false,
+    removeEmptyChunks: true,
+    removeAvailableModules: false,
+    mergeDuplicateChunks: false,
+    sideEffects: true,
+    moduleIds: 'named',
+    chunkIds: 'named',
+    runtimeChunk: 'single',
+    // concatenateModules: false,
+    // providedExports: false,
+    // usedExports: false,
+    // splitChunks: {
+    //   chunks: 'async'
+    // }
+  }
 };
+
+
+  // removeEmptyChunks: true,
+  // removeAvailableModules: true,
+  // mergeDuplicateChunks: true,
+  // flagIncludedChunks: true, // prod default
+  // innerGraph: true,
+  // moduleIds: 'named',
+  // chunkIds: 'named',
+  // runtimeChunk: 'single',
+
+  // // need all three for tree shaking to work
+  // concatenateModules: true,
+  // providedExports: true,
+  // usedExports: true,

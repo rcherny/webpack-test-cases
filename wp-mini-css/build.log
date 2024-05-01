@@ -17,4 +17,4 @@ cacheable modules 145 bytes (javascript) 219 bytes (css/mini-extract)
   css modules 219 bytes
     css ../node_modules/css-loader/dist/cjs.js![1m./src/style.css[39m[22m 155 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
     css ../node_modules/css-loader/dist/cjs.js![1m./src/app1.css[39m[22m 64 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-webpack 5.91.0 compiled [1m[32msuccessfully[39m[22m in 384 ms
+webpack 5.91.0 compiled [1m[32msuccessfully[39m[22m in 433 ms

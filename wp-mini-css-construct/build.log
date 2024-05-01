@@ -1,26 +1,232 @@
-assets by status 4.33 KiB [emitted]
-  assets by status 3.39 KiB [compared for emit]
-    asset main.js 3.13 KiB [emitted] [compared for emit] [minimized] (name: main)
-    asset lazy-appNode.chunk.js 264 bytes [emitted] [compared for emit] [minimized] (name: lazy-appNode)
-  asset chunk-js-app1.chunk.js 811 bytes [emitted] [minimized] (name: chunk-js-app1)
-  asset 842.chunk.js 93 bytes [emitted] [minimized]
-  asset 842.chunk.css 59 bytes [emitted]
-asset index.html 1.37 KiB [compared for emit] [from: src/index.html] [copied]
-asset style.css 156 bytes [compared for emit] (name: style)
-asset chunk-js-app1.chunk.css 65 bytes [compared for emit] (name: chunk-js-app1)
-runtime modules 11.1 KiB 22 modules
-orphan modules 3.9 KiB [orphan] 6 modules
-cacheable modules 2.56 KiB (javascript) 277 bytes (css/mini-extract)
-  javascript modules 2.56 KiB
-    modules by path ./src/*.js 2.46 KiB
-      ./src/main.js 138 bytes [built] [code generated]
-      ./src/app1.js + 1 modules 1 KiB [built] [code generated]
-      + 2 modules
-    modules by path ./src/*.css 100 bytes
-      ./src/style.css 50 bytes [built] [code generated]
-      ./src/appNode.css 50 bytes [built] [code generated]
-  css modules 277 bytes
-    css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./src/style.css 155 bytes [built] [code generated]
-    css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./src/app1.css 64 bytes [built] [code generated]
-    css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./src/appNode.css 58 bytes [built] [code generated]
-webpack 5.91.0 compiled successfully in 285 ms
+PublicPath: /wp-mini-css-construct/dist/
+assets by path *.js 14.8 KiB
+  asset main.js 12.1 KiB {main} [compared for emit] [javascript module] (name: main)
+  asset runtime.js 2.63 KiB {runtime} [compared for emit] [javascript module] (name: runtime)
+asset index.html 1.39 KiB [emitted] [from: src/index.html] [copied]
+asset style.css 156 bytes {style} [compared for emit] (name: style)
+Entrypoint main 14.8 KiB = runtime.js 2.63 KiB main.js 12.1 KiB
+Entrypoint style 2.79 KiB = runtime.js 2.63 KiB style.css 156 bytes
+chunk {main} (runtime: runtime) main.js (main) 6.89 KiB ={runtime}= [initial] [rendered]
+  > ./src/main.js main
+  modules by path ./src/ 4.57 KiB
+    modules by path ./src/*.js 2.72 KiB
+      ./src/app1.js 1.17 KiB {main} [depth 1] [dependent] [built] [code generated]
+        [exports: default]
+        Statement (ExpressionStatement) with side effects in source code at 6:0-16
+        ModuleConcatenation bailout: Cannot concat with ./src/app1.css: Module uses module.id
+        ModuleConcatenation bailout: Cannot concat with ./src/fetchCSS.js: Module ./src/appNode.js is referenced from these modules with unsupported syntax: ./src/app1.js (referenced with import())
+        import() ./app1.js [./src/main.js] 5:4-63
+      ./src/appNode.js 520 bytes {main} [depth 2] [dependent] [built] [code generated]
+        [exports: appNode]
+        Statement (VariableDeclaration) with side effects in source code at 6:0-16:2
+        ModuleConcatenation bailout: Cannot concat with ./src/fetchCSS.js: Module ./src/app1.js is referenced from these modules with unsupported syntax: ./src/main.js (referenced with import())
+        import() ./appNode.js [./src/app1.js] 21:10-71
+      ./src/fetchCSS.js 934 bytes {main} [depth 2] [dependent] [built] [code generated]
+        [exports: adoptCSS, fetchCSS]
+        [only some exports used: adoptCSS]
+        from origin ./src/app1.js
+          [inactive] harmony side effect evaluation ./fetchCSS [./src/app1.js] 3:0-38
+          harmony import specifier ./fetchCSS [./src/app1.js] 6:0-8
+          harmony import specifier ./fetchCSS [./src/app1.js] 33:8-16
+        from origin ./src/appNode.js
+          [inactive] harmony side effect evaluation ./fetchCSS [./src/appNode.js] 1:0-38
+          harmony import specifier ./fetchCSS [./src/appNode.js] 13:4-12
+      ./src/main.js 138 bytes {main} [depth 0] [built] [code generated]
+        [no exports used]
+        Statement (ExpressionStatement) with side effects in source code at 1:0-23
+        ModuleConcatenation bailout: Module is not an ECMAScript module
+        entry ./src/main.js main
+    modules by path ./src/*.css 1.85 KiB
+      ./src/app1.css 635 bytes {main} [depth 2] [dependent] [built] [code generated]
+        [exports: default]
+        [all exports used]
+        Statement (VariableDeclaration) with side effects in source code at 4:0-100
+        ModuleConcatenation bailout: Module uses module.id
+        harmony side effect evaluation ./app1.css [./src/app1.js] 4:0-54
+        harmony import specifier ./app1.css [./src/app1.js] 6:9-14
+      ./src/appNode.css 629 bytes {main} [depth 3] [dependent] [built] [code generated]
+        [exports: default]
+        Statement (VariableDeclaration) with side effects in source code at 4:0-100
+        ModuleConcatenation bailout: Module uses module.id
+        import() ./appNode.css [./src/appNode.js] 10:26-12:6
+      ./src/appNode2.css 630 bytes {main} [depth 2] [dependent] [built] [code generated]
+        [exports: default]
+        Statement (VariableDeclaration) with side effects in source code at 4:0-100
+        ModuleConcatenation bailout: Module uses module.id
+        import() ./appNode2.css [./src/app1.js] 30:25-32:10
+  modules by path ../node_modules/css-loader/dist/runtime/*.js 2.31 KiB
+    ../node_modules/css-loader/dist/runtime/api.js 2.25 KiB {main} [depth 3] [dependent] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 7:0-14
+      Statement (ExpressionStatement) with side effects in source code at 7:0-85:2
+      ModuleConcatenation bailout: Module is not an ECMAScript module
+      from origin ./src/style.css.webpack[javascript/auto]!=!../node_modules/css-loader/dist/cjs.js!./src/style.css
+        harmony side effect evaluation ../../node_modules/css-loader/dist/runtime/api.js ./src/style.css.webpack[javascript/auto]!=!../node_modules/css-loader/dist/cjs.js!./src/style.css 3:0-92
+        harmony import specifier ../../node_modules/css-loader/dist/runtime/api.js ./src/style.css.webpack[javascript/auto]!=!../node_modules/css-loader/dist/cjs.js!./src/style.css 4:30-57
+      from origin ./src/app1.css
+        harmony side effect evaluation ../../node_modules/css-loader/dist/runtime/api.js [./src/app1.css] 3:0-92
+        harmony import specifier ../../node_modules/css-loader/dist/runtime/api.js [./src/app1.css] 4:30-57
+      from origin ./src/appNode.css
+        harmony side effect evaluation ../../node_modules/css-loader/dist/runtime/api.js [./src/appNode.css] 3:0-92
+        harmony import specifier ../../node_modules/css-loader/dist/runtime/api.js [./src/appNode.css] 4:30-57
+      from origin ./src/appNode2.css
+        harmony side effect evaluation ../../node_modules/css-loader/dist/runtime/api.js [./src/appNode2.css] 3:0-92
+        harmony import specifier ../../node_modules/css-loader/dist/runtime/api.js [./src/appNode2.css] 4:30-57
+      cjs self exports reference [../node_modules/css-loader/dist/runtime/api.js] 7:0-14
+      [build time executed]
+    ../node_modules/css-loader/dist/runtime/noSourceMaps.js 64 bytes {main} [depth 3] [dependent] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 3:0-14
+      Statement (ExpressionStatement) with side effects in source code at 3:0-5:2
+      ModuleConcatenation bailout: Module is not an ECMAScript module
+      from origin ./src/style.css.webpack[javascript/auto]!=!../node_modules/css-loader/dist/cjs.js!./src/style.css
+        harmony side effect evaluation ../../node_modules/css-loader/dist/runtime/noSourceMaps.js ./src/style.css.webpack[javascript/auto]!=!../node_modules/css-loader/dist/cjs.js!./src/style.css 2:0-114
+        harmony import specifier ../../node_modules/css-loader/dist/runtime/noSourceMaps.js ./src/style.css.webpack[javascript/auto]!=!../node_modules/css-loader/dist/cjs.js!./src/style.css 4:58-98
+      from origin ./src/app1.css
+        harmony side effect evaluation ../../node_modules/css-loader/dist/runtime/noSourceMaps.js [./src/app1.css] 2:0-114
+        harmony import specifier ../../node_modules/css-loader/dist/runtime/noSourceMaps.js [./src/app1.css] 4:58-98
+      from origin ./src/appNode.css
+        harmony side effect evaluation ../../node_modules/css-loader/dist/runtime/noSourceMaps.js [./src/appNode.css] 2:0-114
+        harmony import specifier ../../node_modules/css-loader/dist/runtime/noSourceMaps.js [./src/appNode.css] 4:58-98
+      from origin ./src/appNode2.css
+        harmony side effect evaluation ../../node_modules/css-loader/dist/runtime/noSourceMaps.js [./src/appNode2.css] 2:0-114
+        harmony import specifier ../../node_modules/css-loader/dist/runtime/noSourceMaps.js [./src/appNode2.css] 4:58-98
+      cjs self exports reference [../node_modules/css-loader/dist/runtime/noSourceMaps.js] 3:0-14
+      [build time executed]
+chunk {runtime} (runtime: runtime) runtime.js (runtime) 937 bytes ={main}= ={style}= [entry] [rendered]
+  > ./src/main.js main
+  > ./src/style.css style
+  webpack/runtime/compat get default export 267 bytes {runtime} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {runtime} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {runtime} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {runtime} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {style} (runtime: runtime) style.css (style) 50 bytes (javascript) 155 bytes (css/mini-extract) ={runtime}= [initial] [rendered]
+  > ./src/style.css style
+  ./src/style.css 50 bytes {style} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    entry ./src/style.css style
+  css ../node_modules/css-loader/dist/cjs.js!./src/style.css 155 bytes {style} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for CssModule
+    unknown [./src/style.css]
+  
+
+LOG from webpack.Compilation
+<t> runtime requirements.modules: 0.195958 ms
+<t> runtime requirements.chunks: 0.180708 ms
+<t> runtime requirements.entries: 0.542458 ms
+<t> compute affected modules: 0.112209 ms
+<t> finish modules: 1.003167 ms
+<t> report dependency errors and warnings: 0.283958 ms
+<t> optimize dependencies: 0.966875 ms
+<t> create chunks: 1.199333 ms
+<t> compute affected modules with chunk graph: 0.052666 ms
+<t> optimize: 3.049791 ms
+    11 modules hashed, 0 from cache (0.69 variants per module in average)
+<t> module hashing: 0.780833 ms
+    100% code generated (11 generated, 0 from cache)
+<t> code generation: 1.69225 ms
+<t> runtime requirements.modules: 0.038625 ms
+<t> runtime requirements.chunks: 0.038334 ms
+<t> runtime requirements.entries: 0.126666 ms
+<t> runtime requirements: 0.22825 ms
+<t> hashing: initialize hash: 0.001958 ms
+<t> hashing: sort chunks: 0.0315 ms
+<t> hashing: hash runtime modules: 0.100125 ms
+<t> hashing: hash chunks: 0.948999 ms
+<t> hashing: hash digest: 0.016166 ms
+<t> hashing: process full hash modules: 0.00075 ms
+<t> hashing: 1.320166 ms
+    100% code generated (4 generated, 0 from cache)
+<t> record hash: 0.007708 ms
+<t> module assets: 0.042166 ms
+<t> create chunk assets: 2.325333 ms
+<t> process assets: 45.829 ms
+
+LOG from webpack.Compiler
+<t> make hook: 159.580041 ms
+<t> finish make hook: 0.024333 ms
+<t> finish compilation: 1.554459 ms
+<t> seal compilation: 58.127417 ms
+<t> afterCompile hook: 0.015334 ms
+<t> emitAssets: 1.968125 ms
+<t> emitRecords: 0.027208 ms
+<t> done hook: 0.019875 ms
+<t> beginIdle: 0.008209 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.252333 ms
+<t> figure out provided exports: 0.3595 ms
+    50% of exports of modules have been determined (8 no declared exports, 8 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.072125 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.23683 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.06775 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.107666 ms
+<t> trace exports usage in graph: 0.533166 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.224084 ms
+<t> visitModules: visiting: 0.671334 ms
+    27 queue items processed (15 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.994708 ms
+<t> connectChunkGroups: 0.025792 ms
+<t> cleanup: 0.012666 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.01 ms
+<t> modules: 0.563542 ms
+<t> queue: 0.001084 ms
+<t> maxSize: 0.003 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.100708 ms
+<t> sort relevant modules: 0.065958 ms
+<t> find modules to concatenate: 0.497834 ms
+<t> sort concat configurations: 0.000375 ms
+<t> create concatenated modules: 0.016584 ms
++ 3 hidden lines
+
+LOG from copy-webpack-plugin
+    starting to add additional assets...
+    starting to process a pattern from '*.html' using '/Users/RCherny/Code/Repos/webpack/webpack-test-cases/wp-mini-css-construct/src' context
+    begin globbing '/Users/RCherny/Code/Repos/webpack/webpack-test-cases/wp-mini-css-construct/src/*.html'...
+    'to' option '.' determinated as 'dir'
+    determined that '/Users/RCherny/Code/Repos/webpack/webpack-test-cases/wp-mini-css-construct/src/index.html' should write to 'index.html'
+    finished to process a pattern from '*.html' using '/Users/RCherny/Code/Repos/webpack/webpack-test-cases/wp-mini-css-construct/src' context
+    writing 'index.html' from '/Users/RCherny/Code/Repos/webpack/webpack-test-cases/wp-mini-css-construct/src/index.html' to compilation assets...
+    written 'index.html' from '/Users/RCherny/Code/Repos/webpack/webpack-test-cases/wp-mini-css-construct/src/index.html' to compilation assets
+    finished to adding additional assets
++ 13 hidden lines
+
+LOG from webpack.FileSystemInfo
+    12 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 9 timestamps 8 hashes 8 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/1) entries shared via 0 shared snapshots (0 times referenced)
+    File timestamp hash combination snapshot optimization: 0% (0/9) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 1 items
+    Managed items snapshot optimization: 0% (0/3) entries shared via 0 shared snapshots (0 times referenced)
+    Managed files snapshot optimization: 0% (0/7) entries shared via 0 shared snapshots (0 times referenced)
+
+2024-04-30 15:00:35: webpack 5.91.0 compiled successfully in 231 ms (744961edee511c23bf9b)

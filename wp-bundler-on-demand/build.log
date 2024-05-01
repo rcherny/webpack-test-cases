@@ -41,4 +41,4 @@ cacheable modules 3.46 KiB (javascript) 106 bytes (asset)
     [1m./src/appNode2.css?url[39m[22m 42 bytes (javascript) 106 bytes (asset) [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
     [1m./src/appNode.css[39m[22m 40 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
   [1m./src/template.html[39m[22m 1.24 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-[1m[48;5;118m[30m HTML Bundler Plugin [39m[1m[49m[32m ▶▶▶[39m[1m[39m[22m (webpack 5.91.0) compiled [1m[32msuccessfully[39m[22m in 560 ms
+[1m[48;5;118m[30m HTML Bundler Plugin [39m[1m[49m[32m ▶▶▶[39m[1m[39m[22m (webpack 5.91.0) compiled [1m[32msuccessfully[39m[22m in 310 ms

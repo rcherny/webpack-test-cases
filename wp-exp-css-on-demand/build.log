@@ -1,15 +1,11 @@
-assets by status 4.87 KiB [emitted]
-  assets by path *.js 4.7 KiB
-    asset main.js 3.98 KiB [emitted] [minimized] (name: main)
-    asset chunk-js-app1.chunk.js 524 bytes [emitted] [minimized] (name: chunk-js-app1)
-    asset lazy-appNode.chunk.js 219 bytes [emitted] [minimized] (name: lazy-appNode)
-  assets by path *.css 173 bytes
-    asset chunk-js-app1.chunk.css 90 bytes [emitted] (name: chunk-js-app1)
-    asset lazy-appNodeStyle.chunk.css 83 bytes [emitted] (name: lazy-appNodeStyle)
-assets by status 1.36 KiB [compared for emit]
-  asset index.html 1.19 KiB [compared for emit] [from: src/index.html] [copied]
-  asset style.css 181 bytes [compared for emit] (name: style)
-runtime modules 14.4 KiB 15 modules
+assets by chunk 1.25 KiB (name: main)
+  asset main.js 1.1 KiB [compared for emit] [javascript module] [minimized] (name: main)
+  asset main.css 153 bytes [compared for emit] (name: main)
+asset index.html 1.19 KiB [compared for emit] [from: src/index.html] [copied]
+asset style.css 181 bytes [compared for emit] (name: style)
+Entrypoint main 1.25 KiB = main.js 1.1 KiB main.css 153 bytes
+Entrypoint style 181 bytes = style.css
+runtime modules 670 bytes 3 modules
 cacheable modules 1.5 KiB (javascript) 277 bytes (css)
   javascript modules 1.5 KiB
     ./src/main.js 86 bytes [built] [code generated]
@@ -19,4 +15,4 @@ cacheable modules 1.5 KiB (javascript) 277 bytes (css)
     css ./src/style.css 155 bytes [built] [code generated]
     css ./src/app1.css 64 bytes [built] [code generated]
     css ./src/appNode.css 58 bytes [built] [code generated]
-webpack 5.91.0 compiled successfully in 258 ms
+webpack 5.91.0 compiled successfully in 195 ms

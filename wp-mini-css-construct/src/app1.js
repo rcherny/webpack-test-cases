@@ -1,14 +1,14 @@
 // has never been supported
 // import /* webpackChunkName: "chunk-css-app1" */ "./app1.css";
-import { fetchCSS } from "./fetchCSS";
-import * as sheet from "./app1.css" assert { type: "css" };
+import { adoptCSS } from "./fetchCSS";
+import sheet from "./app1.css" assert { type: "css" };
 
-fetchCSS(sheet);
+adoptCSS(sheet);
 
 console.log(">> app1.js (mini-remove)");
 
 const appNodeLoader = {
-  init() {
+  async init() {
     console.log("00");
     const nodeEl = document.querySelector(".appNode");
     if (nodeEl) {
@@ -26,6 +26,11 @@ const appNodeLoader = {
           );
         }
         loadStuff(aData);
+        // this still generates lazy-appNode2.chunk.js
+        const appNode2 = import(/* webpackChunkName: "lazy-appNode2" */'./appNode2.css', {
+          assert: { type: "css" },
+        });
+        adoptCSS(appNode2);
       });
     } else {
       console.log("03");

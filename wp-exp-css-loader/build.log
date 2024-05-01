@@ -55,4 +55,4 @@ You can't use `experiments.css` (`experiments.futureDefaults` enable built-in CS
 6 warnings have detailed information that is not shown.
 Use 'stats.errorDetails: true' resp. '--stats-error-details' to show it.
 
-webpack 5.91.0 compiled with [1m[33m6 warnings[39m[22m in 581 ms
+webpack 5.91.0 compiled with [1m[33m6 warnings[39m[22m in 660 ms

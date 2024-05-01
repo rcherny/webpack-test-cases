@@ -1,5 +1,8 @@
 import { adoptCSS } from "./fetchCSS";
 
+// import * as appNode2 from './appNode2.css' assert { type: 'css' };
+// adoptCSS(appNode2);
+
 const appNode = {
   async init(data) {
     // undesired: on-demand file is loaded up front

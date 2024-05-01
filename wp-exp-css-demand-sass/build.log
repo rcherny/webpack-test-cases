@@ -17,4 +17,4 @@ cacheable modules 1.58 KiB (javascript) 275 bytes (css)
     [1mcss ./src/style.css[39m[22m 155 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
     [1mcss ./src/app1.scss[39m[22m 63 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
     [1mcss ./src/appNode.scss[39m[22m 57 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-webpack 5.91.0 compiled [1m[32msuccessfully[39m[22m in 387 ms
+webpack 5.91.0 compiled [1m[32msuccessfully[39m[22m in 917 ms
